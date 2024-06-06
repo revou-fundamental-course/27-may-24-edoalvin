@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <div class="fcontainer">
+        <nav class="fnav">
+          <div class="brand">
+            <div class="firstname">
+              <img src="./assets/schoolLogo.png" />
+            </div>
+          </div>
+  
+          <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Our Profile</a></li>
+            <li><a href="/">Achievement</a></li>
+            <li><a href="/">Message us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- NAVBAR END -->
+
+      <!-- HERO START -->
+      <div class="fabout">
+        <img src="./assets/heroImage.jpg" alt="Background Image" class="background-image">
+        <div class="aboutp">
+          <h1>Hi Gengs! Welcome to Tadika Mesra's Website</h1>
+          <h2>
+            Ini adalah sebuah website yang dikelola langsung oleh SMA Tadika Mesra, kami memiliki beberapa fasilitas yang luar biasa kerennya untuk kalian lihat.
+          </h2>
+        </div>
+      </div> 
+      <!-- HERO END -->
+  
+      <!-- FACILITIES START -->
+      <section class="menu">
+        <h2><span>Our</span> Facilities</h2>
+  
+        <div class="row">
+          <div class="menu-card">
+            <img src="./assets/basket.jpg" class="menu-card-img">
+            <h3 class="menu-card-title">- Lapangan Basket -</h3>
+          </div>
+          <div class="menu-card">
+            <img src="./assets/canteen.jpg"  class="menu-card-img">
+            <h3 class="menu-card-title">- Big Canteen -</h3>
+          </div>
+          <div class="menu-card">
+            <img src="./assets/music.jpg" class="menu-card-img">
+            <h3 class="menu-card-title">- Music Room -</h3>
+          </div>
+        </div>
+      </section>
+      <!-- FACILITES END -->
+
+      <!-- MESSAGE START -->
+       <div class="contain-mess">
+        <section class="message-us">
+          <div class="container">
+              <div class="form-container">
+                  <h2>Message Us</h2>
+                  <form id="messageForm">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                      
+                      <label for="dob">Date of Birth:</label>
+                      <input type="date" id="dob" name="dob" required>
+                      
+                      <label for="gender">Gender:</label>
+                      <div class="gender-options">
+                          <input type="radio" id="male" name="gender" value="male" required>
+                          <label for="male">Male</label>
+                          <input type="radio" id="female" name="gender" value="female" required>
+                          <label for="female">Female</label>
+                      </div>
+                      
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                      
+                      <button type="submit"  id="submitButton">Submit</button>
+                  </form>
+              </div>
+              
+          </div>
+      </section>
+
+      <div class="hasil-submit" id="hasil">
+              <h2>Submitted Information</h2>
+                <p><strong>Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="displayDob"></span></p>
+                <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+                <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+      </div>
+  </div>
+      
+      <!-- MESSAGE END -->
+
+      <!-- FOOTER START -->
+    <div class="footer">
+      <p>&copy; 2024 Edoardo Alvin. All rights reserved.</p>
+      <p>
+          <a href="https://www.linkedin.com/in/edoardo-alvin-nugroho-82493427a/" target="_blank">Linkedin</a> |
+          <a href="https://www.instagram.com/edo_alvin/" target="_blank">Instagram</a>
+      </p>
+  </div>
+  <!-- FOOTER END -->
+
+  
+    <script src="index.js"></script>
+</body>
+</html>
